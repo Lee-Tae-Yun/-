@@ -1,0 +1,240 @@
+https://ambler.kr/css
+-Dinner-
+1번 plate
+2번 bento
+3번 #fancy
+4번 plate apple
+5번 #fancy pickle
+6번 .small
+7번 orange.small
+8번 bento orange.small
+9번 plate,bento
+10번 *
+11번 plate *
+12번 plate + apple
+13번 bento~pickle
+14번 plate > apple
+15번 plate :first-child
+16번 palte :only-child
+17번 .small:last-child
+18번 :nth-child(3)
+19번 bento:nth-last-child(3)
+20번 apple:first-of-type
+21번 plate:nth-of-type(even)
+22번 plate:nth-of-type(2n+3)
+23번 plate apple:only-of-type
+24번 .small:last-of-type
+25번 bento:empty
+26번 :not(.small, plate)
+27번 [for]
+28번 plate[for]
+29번 bento[for="Vitaly"]
+30번 [for^="Sa"]
+31번 [for$="ato"]
+32번 [for*="obb"]
+
+-Froggy-
+1번 justify-content: flex-end;
+2번 justify-content: center;
+3번 justify-content:space-around;
+4번 justify-content:space-between
+5번 align-items:flex-end;
+6번 justify-content:center;
+     align-items:center;
+7번 justify-content:space-around;
+     align-items:flex-end;
+8번 flex-direction:row-reverse;
+9번 flex-direction:column;
+10번 flex-direction:row-reverse;
+       justify-content: flex-end;
+11번 flex-direction:column;
+       justify-content:flex-end;
+12번 flex-direction:column-reverse;
+       justify-content:space-between;
+13번 justify-content:center;
+       flex-direction:row-reverse;
+       align-items:flex-end;
+14번 order:3;
+15번 order:-3;
+16번 align-self:flex-end;
+17번 order:3;
+       align-self:flex-end;
+18번 flex-wrap:wrap;
+19번 flex-direction:column;
+       flex-wrap:wrap;
+20번 flex-flow:column wrap;
+21번 align-content:flex-start;
+22번 align-content:flex-end;
+23번 flex-direction:column-reverse;
+       align-content:center;
+24번 flex-direction:column-reverse;
+       flex-wrap: wrap-reverse;
+       align-content:space-between;
+       justify-content:center;
+
+-Grid garden-
+1번?grid-column-start: 3;
+2번 grid-column-start: 5;
+3번 grid-column-end: 4;
+4번 grid-column-end: 2;
+5번 grid-column-end: -2;
+6번 grid-column-start: -3;
+7번 grid-column-end: span 2;
+8번 grid-column-end: span 5;
+9번 grid-column-start: 3;
+10번 grid-column: 4 / 6;
+11번 grid-column: 2 / span 3;
+12번 grid-row-start: 3;
+13번 grid-row: 3 / span 5;
+14번 grid-column: 2; grid-row: 5;
+15번 grid-column: 2 / span 5; grid-row: 1 / span 5;
+16번 grid-area: 1 / 2 / 4 / 6;
+17번 grid-area: 2 / 3 / 5 / 6;
+18번 order: 5;
+19번 order: -1;
+20번 grid-template-columns: 50%;
+21번 grid-template-columns: repeat(8, 12.5%);
+22번 grid-template-columns: 100px 3em 40%;
+23번 grid-template-columns: 1fr 5fr;
+24번?grid-template-columns: 50px repeat(3, 1fr) 50px;
+25번?grid-template-columns: 75px 3fr 2fr;
+26번 grid-template-rows: 50px 0 0 0;
+27번 grid-template: 60% 40% / 200px;
+28번 grid-template: 1fr 50px / 1fr 4fr;
+
+-Flexbox defense-
+1번 .tower-group-1 {
+	display: flex;
+	justify-content: center;
+	}
+2번 .tower-group-1 {
+	display: flex;
+	justify-content: flex-end;
+	}
+	.tower-group-2 {
+	display: flex;
+	justify-content: center;
+	}
+	.tower-group-3 {
+	display: flex;
+	justify-content: flex-end;
+	}
+3번 .tower-group-1 {
+	display: flex;
+	justify-content: center;
+	}
+	.tower-group-2 {
+	display: flex;
+	justify-content: space-around;
+	}
+4번 .tower-group-1 {
+	display: flex;
+	align-items: flex-end;
+	}
+	.tower-group-2 {
+	display: flex;
+	align-items: flex-end;
+	}
+5번 .tower-group-1 {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	}
+	.tower-group-2 {
+	display: flex;
+	justify-content: center;
+	}
+	.tower-group-3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+6번 .tower-group-1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
+7번 .tower-group-1 {
+	display: flex;
+	flex-direction: column;
+	}
+	.tower-group-2 {
+	display: flex;
+	flex-direction: column;
+	}
+8번 .tower-group-1 {
+	display: flex;
+	flex-direction: column;
+	}
+	.tower-group-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+ 9번 .tower-group-1 {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	}
+	.tower-group-2 {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	align-items: center;
+	}
+10번 .tower-group-1 {
+	display: flex;
+	justify-content: space-around;
+	}
+	.tower-1-1 { }
+	.tower-1-2 {
+	order: 1;
+	}
+	.tower-1-3 { }
+	.tower-group-2 {
+	display: flex;
+	justify-content: space-around;
+	}
+	.tower-2-1 { }
+	.tower-2-2 {
+	order: -1;
+	}
+	.tower-2-3 { }
+11번 .tower-group-1 {
+	display: flex;
+	justify-content: space-between;
+	}
+	.tower-1-1 {
+	align-self: flex-end;
+	}
+	.tower-1-2 { }
+	.tower-1-3 {
+	align-self: flex-end;
+	}
+	.tower-1-4 { }
+12번  .tower-group-1 {
+	display: flex;
+	justify-content: space-between;
+	}
+	.tower-1-1 {
+	order: 1;
+	}
+	.tower-1-2 {
+	order: 2;
+	align-self: center;
+	}
+	.tower-1-3 {
+	order: 4;
+	align-self: center;
+	}
+	.tower-1-4 {
+	order: 3;
+	align-self: center;
+	}
+	.tower-1-5 {
+	order: 5;
+	align-self: flex-end;
+	}
+
+
+
